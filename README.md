@@ -1,5 +1,8 @@
 # Starterkit
 
+Prerequisite
+* install node and npm LTS (https://nodejs.org/en/)
+
 Start
 * npm install
 * npm start
