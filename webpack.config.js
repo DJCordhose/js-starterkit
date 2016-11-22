@@ -1,8 +1,12 @@
+const path = require('path');
+const outputPath = path.resolve(__dirname, 'public/dist');
+
 module.exports = {
     entry: "./src/main.js",
-    output: {
-        path: __dirname,
-        filename: "public/dist/bundle.js"
+    output:  {
+        path:       outputPath,
+        filename:   'bundle.js',
+        publicPath: '/dist'
     },
     module: {
         preLoaders: [
