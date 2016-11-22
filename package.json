@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "start": "npm run devserver",
-    "devserver": "webpack-dev-server --progress --colors --hot --content-base public",
+    "devserver": "webpack-dev-server --progress --colors --inline --content-base public",
     "webpack": "webpack --watch",
     "test": "mocha ./test/unit -r jsdom-global/register --compilers js:babel-core/register --recursive",
     "test:watch": "npm test -- --watch",
