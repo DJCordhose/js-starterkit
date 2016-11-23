@@ -5,6 +5,7 @@
     "start": "npm run devserver",
     "devserver": "webpack-dev-server --progress --colors --inline --content-base public",
     "webpack": "webpack --watch",
+    "webpack:prod": "webpack -p --config webpack.config.prod.js",
     "test": "mocha ./test/unit -r jsdom-global/register --compilers js:babel-core/register --recursive",
     "test:watch": "npm test -- --watch",
     "test:karma": "karma start --single-run",

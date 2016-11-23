@@ -1,10 +1,12 @@
+// import jQuery from 'jquery';
 export const message = '<h1>Hello, World</h1>';
 
 export function sayHello() {
     const div = document.createElement('div');
+    document.body.appendChild(div);
+    // jQuery('div').text('Opi');
     div.setAttribute('id', 'main');
     div.innerHTML = message;
-    document.body.appendChild(div);
 }
 
 class Programmer {
