@@ -1,7 +1,7 @@
 import chai from 'chai';
 const should = chai.should();
 
-import { expect } from 'chai'
+import { expect } from 'chai';
 
 import {sayHello, message} from '../../src/hello';
 

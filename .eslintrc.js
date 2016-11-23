@@ -3,7 +3,7 @@ module.exports = {
         "browser": true,
         "es6": true
     },
-    // "extends": "eslint:recommended",
+    "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
@@ -12,12 +12,15 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        "no-var": [
+            "off"
+        ],
         "indent": [
             "warn",
             4
         ],
         "linebreak-style": [
-            "error",
+            "off",
             "unix"
         ],
         "quotes": [
@@ -27,6 +30,9 @@ module.exports = {
         "semi": [
             "error",
             "always"
+        ],
+        "no-console": [
+            "warn", {allow: ["log", "warn", "error"]}
         ]
     }
 };

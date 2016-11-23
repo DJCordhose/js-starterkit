@@ -1,1 +1,2 @@
-import './folder';
+// import './folder';
+import './quiz';

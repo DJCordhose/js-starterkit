@@ -15,6 +15,3 @@ export function saySomething(something) {
     div.innerHTML = something;
 }
 
-// 1. Eigenes Modul, mit eigener Klasse
-// 2. Klasse exportieren, importieren und benutzen
-

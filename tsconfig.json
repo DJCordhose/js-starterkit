@@ -1,0 +1,26 @@
+{
+  "version": "2",
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+//    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "lib": ["es7", "dom"],
+//    "moduleResolution": "node",
+    "strictNullChecks": true
+  },
+  "files": [
+    "src/ts/main.ts"
+  ],
+  "include": [
+//    "src/**/*",
+    "./typings/*.d.ts"
+  ],
+
+  "exclude": [
+    "node_modules"
+  ]
+}

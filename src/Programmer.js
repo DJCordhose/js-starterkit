@@ -1,4 +1,8 @@
-export class Programmer {
+// Aufgabe:
+// 1. Eigenes Modul, mit eigener Klasse
+// 2. Klasse exportieren, importieren und benutzen
+
+export default class Programmer {
     // public String name;
     // public String language;
 

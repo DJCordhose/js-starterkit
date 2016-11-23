@@ -6,7 +6,7 @@
     "devserver": "webpack-dev-server --progress --colors --inline --content-base public",
     "webpack": "webpack --watch",
     "webpack:prod": "webpack -p --config webpack.config.prod.js",
-    "test": "mocha ./test/unit -r jsdom-global/register --compilers js:babel-core/register --recursive",
+    "test": "mocha ./test/unit  --recursive -r jsdom-global/register --compilers js:babel-core/register",
     "test:watch": "npm test -- --watch",
     "test:karma": "karma start --single-run",
     "test:karma:watch": "karma start"
@@ -26,6 +26,9 @@
     "jsdom-global": "^2.1.0",
     "karma": "^1.3.0",
     "karma-chrome-launcher": "^2.0.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-iebrowsers-launcher": "0.0.1",
     "karma-mocha": "^1.3.0",
     "karma-mocha-reporter": "^2.2.0",
     "karma-phantomjs-launcher": "^1.0.2",
@@ -34,6 +37,8 @@
     "mocha": "^3.1.2",
     "phantomjs": "^2.1.7",
     "sinon": "^1.17.6",
+    "ts-loader": "^1.2.2",
+    "typescript": "^2.2.0-dev.20161123",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   }
