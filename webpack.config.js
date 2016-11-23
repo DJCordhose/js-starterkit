@@ -15,8 +15,8 @@ module.exports = {
     },
     module: {
         preLoaders: [
-            {test: /\.js$/, exclude: /node_modules/, loader: 'eslint-loader'}
-        //     // {test: /\.js$/, exclude: /node_modules/, loader: 'eslint-loader?{fix: true}'}
+            {test: /\.js$/, exclude: /node_modules/, loader: 'eslint-loader'},
+            {test: /\.tsx?$/, exclude: /node_modules/, loader: 'tslint-loader'}
         ],
         loaders: [
             {test: /\.js$/, exclude: /node_modules/,  loader: 'babel'},
@@ -30,13 +30,7 @@ module.exports = {
         failOnError: true
         // fix: true
     },
-    // When importing a module whose path matches one of the following, just
-    // assume a corresponding global variable exists and use that instead.
-    // This is important because it allows us to avoid bundling all of our
-    // dependencies, which allows browsers to cache those libraries between builds.
     // externals: {
-    //     "react": "React",
-    //     "react-dom": "ReactDOM"
-    // },
-
+    //     'jquery': 'jQuery'
+    // }
 };

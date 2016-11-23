@@ -9,12 +9,17 @@
     "test": "mocha ./test/unit  --recursive -r jsdom-global/register --compilers js:babel-core/register",
     "test:watch": "npm test -- --watch",
     "test:karma": "karma start --single-run",
-    "test:karma:watch": "karma start"
+    "test:karma:watch": "karma start",
+    "test:typescript": "mocha ./test/ts -r jsdom-global/register --compilers ts:ts-node/register --recursive",
+    "test:typescript:watch": "npm run test:typescript -- --watch"
   },
   "dependencies": {
-    "jquery": "^3.1.1"
+    "@types/jquery": "latest",
+    "jquery": "latest"
   },
   "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.33",
     "babel": "^6.5.2",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.7",
@@ -38,6 +43,9 @@
     "phantomjs": "^2.1.7",
     "sinon": "^1.17.6",
     "ts-loader": "^1.2.2",
+    "ts-node": "^1.7.0",
+    "tslint": "^4.0.2",
+    "tslint-loader": "^3.2.0",
     "typescript": "^2.2.0-dev.20161123",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
