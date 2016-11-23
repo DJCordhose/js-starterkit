@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@types/jquery": "latest",
+    "bootstrap": "^3.3.7",
     "jquery": "latest"
   },
   "devDependencies": {

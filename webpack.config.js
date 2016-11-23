@@ -2,8 +2,8 @@ const path = require('path');
 const outputPath = path.resolve(__dirname, 'public/dist');
 
 module.exports = {
-    // entry: './src/main.js',
-    entry: './src/ts/main.ts',
+    entry: './src/main.js',
+    // entry: './src/ts/main.ts',
     output:  {
         path:       outputPath,
         filename:   'bundle.js',
@@ -30,7 +30,7 @@ module.exports = {
         failOnError: true
         // fix: true
     },
-    // externals: {
-    //     'jquery': 'jQuery'
-    // }
+    externals: {
+        'jquery': 'jQuery'
+    }
 };

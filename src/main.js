@@ -1,2 +1,3 @@
 // import './folder';
-import './quiz';
+// import './quiz';
+import './bootstrap-sandbox';
