@@ -1,6 +1,7 @@
-import {sayHello} from './hello';
+import {sayHello, message} from './hello';
 
 document.addEventListener('DOMContentLoaded', () => {
-  sayHello();
+    sayHello();
 });
+console.log(message);
 

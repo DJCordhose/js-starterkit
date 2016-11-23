@@ -10,6 +10,9 @@
     "test:karma": "karma start --single-run",
     "test:karma:watch": "karma start"
   },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.18.2",
