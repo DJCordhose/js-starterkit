@@ -9,16 +9,12 @@ export function sayHello() {
     div.innerHTML = message;
 }
 
-class Programmer {
-    // public String name;
-    // public String language;
-
-    constructor(name, language) {
-        this.name = name;
-        this.language = language;
-    }
+export function saySomething(something) {
+    const div = document.createElement('div');
+    document.body.appendChild(div);
+    div.innerHTML = something;
 }
 
-const olli = new Programmer('Olli', 'JavaScript');
-console.log(olli.name);
+// 1. Eigenes Modul, mit eigener Klasse
+// 2. Klasse exportieren, importieren und benutzen
 
