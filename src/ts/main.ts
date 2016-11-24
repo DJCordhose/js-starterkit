@@ -1,4 +1,5 @@
-import {sayHello} from './hello';
+// import {sayHello} from './hello';
 import '../quiz';
+import './sandbox';
 
-sayHello();
+// sayHello();
