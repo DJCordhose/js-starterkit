@@ -31,6 +31,12 @@ module.exports = {
             "error",
             "always"
         ],
+        "eqeqeq": [
+            "error"
+        ],
+        "yoda": [
+            "error"
+        ],
         "no-console": [
             "warn", {allow: ["log", "warn", "error"]}
         ]
